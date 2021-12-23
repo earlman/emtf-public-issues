@@ -1,47 +1,36 @@
 name: Bug Report
 description: File a bug report
-title: "[BUG]: "
+title: "[emtf-issue-tracker]: "
 labels: ["bug"]
 assignees:
   - earlman
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
+        Thanks for taking the time to fill out this bug report! 🙏🏻
   - type: dropdown
-    id: version
+    id: contact-type
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Best way to contact you about this?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
+        - Nah I'm busy
+        - fb messenger
+        - text me
+        - call me
+        - email me
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Show us what happened
+      description: Drag & Drop or Paste an image here
+      placeholder: ![image](...)
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue Description
+      description: Provide a description if you think it's necessary
+      placeholder: Can be as long or as short as you like.
   - type: dropdown
     id: browsers
     attributes:
@@ -52,17 +41,3 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
