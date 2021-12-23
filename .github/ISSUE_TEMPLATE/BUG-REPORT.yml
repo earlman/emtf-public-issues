@@ -14,17 +14,17 @@ body:
     attributes:
       label: Best way to contact you about this?
       options:
-        - Nah I'm busy
         - fb messenger
         - text me
         - call me
         - email me
+        - nah I'm busy
   - type: textarea
     id: screenshot
     attributes:
       label: Show us what happened
-      description: Drag & Drop or Paste an image here
-      placeholder: ![image](...)
+      description: Drag & Drop or Paste an image
+      placeholder: "![image](...)"
   - type: textarea
     id: description
     attributes:
@@ -34,7 +34,7 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What browser are you seeing the problem on?
       multiple: true
       options:
         - Firefox
