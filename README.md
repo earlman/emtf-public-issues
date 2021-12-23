@@ -1,4 +1,4 @@
-eMTF Issue Tracker
+# eMTF Issue Tracker
 
 This repo is used to track bugs found at [emtf.foundations.design](emtf.foundations.design). Both technical issues with the website and questions on the fund that need to be clarified can be submitted here. 
 
